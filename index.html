@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>國立苑裡高中114學年度 三對三籃球賽程表</title>
+    <title>國立苑裡高中114學年度 三對三籃球賽程表 (最終成績)</title>
     <style>
         :root {
             --bg-color: #f4f7f6;
@@ -35,7 +35,19 @@
         .match-info {
             font-size: 0.9rem;
             color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        /* 名次顯示列 */
+        .ranking-banner {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
             margin-bottom: 15px;
+            border: 1px solid #ffeeba;
         }
 
         /* 頁籤設計 */
@@ -74,7 +86,7 @@
 
         .bracket {
             display: flex;
-            min-width: 850px; /* 確保四個輪次在手機上有足夠寬度展開 */
+            min-width: 850px;
             gap: 20px;
             padding: 10px;
         }
@@ -117,11 +129,11 @@
 
         .team.winner {
             font-weight: bold;
-            background-color: #fcfcfc;
-            color: #27ae60;
+            background-color: #e8f5e9;
+            color: #2e7d32;
         }
 
-        .score { color: #95a5a6; font-weight: bold; }
+        .score { color: #555; font-weight: bold; }
 
         .finals .matchup { border: 2px solid #f1c40f; }
         .third-place .matchup { border: 2px solid #e67e22; }
@@ -138,9 +150,9 @@
 <body>
 
     <header>
-        <h1>國立苑裡高中114學年度 三對三籃球賽</h1>
-        <div class="match-info">預賽：3/11(三) 13:10起 | 決賽：3/18(三) 15:10起</div>
-        <div class="match-info">👇 手機版請於下方圖表【左右滑動】查看晉級圖</div>
+        <h1>國立苑裡高中114學年度 三對三籃球賽 (最終成績)</h1>
+        <div class="match-info">比賽已圓滿落幕，感謝各位同學參與！</div>
+        <div class="match-info">👇 手機版請於下方圖表【左右滑動】查看完整對戰與比分</div>
     </header>
 
     <div class="tabs">
@@ -151,54 +163,55 @@
     </div>
 
     <div id="boy2" class="tab-content active">
+        <div class="ranking-banner">🏆 第一名: 204 │ 🥈 第二名: 207 │ 🥉 第三名: 206 │ 🏅 第四名: 209</div>
         <div class="bracket-wrapper">
             <div class="bracket">
                 <div class="round">
-                    <div class="round-title">3/11 預賽 (一)</div>
+                    <div class="round-title">預賽 (一)</div>
                     <div class="matchup"><div class="match-label">場次一</div>
-                        <div class="team">210 <span class="score">-</span></div><div class="team">209 <span class="score">-</span></div>
+                        <div class="team">210 <span class="score">2</span></div><div class="team winner">209 <span class="score">6</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次二</div>
-                        <div class="team">212 <span class="score">-</span></div><div class="team">211 <span class="score">-</span></div>
+                        <div class="team winner">212 <span class="score">2</span></div><div class="team">211 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次三</div>
-                        <div class="team">205 <span class="score">-</span></div><div class="team">208 <span class="score">-</span></div>
+                        <div class="team winner">205 <span class="score">4</span></div><div class="team">208 <span class="score">2</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次四</div>
-                        <div class="team">206 <span class="score">-</span></div><div class="team">202 <span class="score">-</span></div>
+                        <div class="team winner">206 <span class="score">5</span></div><div class="team">202 <span class="score">4</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/11 八強賽</div>
+                    <div class="round-title">八強賽</div>
                     <div class="matchup"><div class="match-label">場次五</div>
-                        <div class="team">203 <span class="score">-</span></div><div class="team">(一)勝 <span class="score">-</span></div>
+                        <div class="team">203 <span class="score">0</span></div><div class="team winner">209 <span class="score">2</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次六</div>
-                        <div class="team">(二)勝 <span class="score">-</span></div><div class="team">207 <span class="score">-</span></div>
+                        <div class="team">212 <span class="score">4</span></div><div class="team winner">207 <span class="score">8</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次七</div>
-                        <div class="team">204 <span class="score">-</span></div><div class="team">(三)勝 <span class="score">-</span></div>
+                        <div class="team winner">204 <span class="score">4</span></div><div class="team">205 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次八</div>
-                        <div class="team">(四)勝 <span class="score">-</span></div><div class="team">201 <span class="score">-</span></div>
+                        <div class="team winner">206 <span class="score">7</span></div><div class="team">201 <span class="score">4</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/18 四強賽</div>
+                    <div class="round-title">四強賽</div>
                     <div class="matchup"><div class="match-label">場次九</div>
-                        <div class="team">(五)勝 <span class="score">-</span></div><div class="team">(六)勝 <span class="score">-</span></div>
+                        <div class="team">209 <span class="score">2</span></div><div class="team winner">207 <span class="score">4</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次十</div>
-                        <div class="team">(七)勝 <span class="score">-</span></div><div class="team">(八)勝 <span class="score">-</span></div>
+                        <div class="team winner">204 <span class="score">4</span></div><div class="team">206 <span class="score">2</span></div>
                     </div>
                 </div>
                 <div class="round finals">
-                    <div class="round-title">3/18 決賽</div>
+                    <div class="round-title">決賽</div>
                     <div class="matchup"><div class="match-label">🏆 冠軍賽 (場次十二)</div>
-                        <div class="team">(九)勝 <span class="score">-</span></div><div class="team">(十)勝 <span class="score">-</span></div>
+                        <div class="team">207 <span class="score">0</span></div><div class="team winner">204 <span class="score">11</span></div>
                     </div>
                     <div class="matchup" style="border: 2px solid #e67e22;"><div class="match-label" style="background: #fdf2e9;">🥉 季軍賽 (場次十一)</div>
-                        <div class="team">(九)敗 <span class="score">-</span></div><div class="team">(十)敗 <span class="score">-</span></div>
+                        <div class="team">209 <span class="score">2</span></div><div class="team winner">206 <span class="score">5</span></div>
                     </div>
                 </div>
             </div>
@@ -206,54 +219,55 @@
     </div>
 
     <div id="boy1" class="tab-content">
+        <div class="ranking-banner">🏆 第一名: 102 │ 🥈 第二名: 106 │ 🥉 第三名: 105 │ 🏅 第四名: 112</div>
         <div class="bracket-wrapper">
             <div class="bracket">
                 <div class="round">
-                    <div class="round-title">3/11 預賽 (一)</div>
+                    <div class="round-title">預賽 (一)</div>
                     <div class="matchup"><div class="match-label">場次一</div>
-                        <div class="team">112 <span class="score">-</span></div><div class="team">107 <span class="score">-</span></div>
+                        <div class="team winner">112 <span class="score">8</span></div><div class="team">107 <span class="score">7</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次二</div>
-                        <div class="team">106 <span class="score">-</span></div><div class="team">103 <span class="score">-</span></div>
+                        <div class="team winner">106 <span class="score">6</span></div><div class="team">103 <span class="score">4</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次三</div>
-                        <div class="team">104 <span class="score">-</span></div><div class="team">101 <span class="score">-</span></div>
+                        <div class="team">104 <span class="score">4</span></div><div class="team winner">101 <span class="score">5</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次四</div>
-                        <div class="team">108 <span class="score">-</span></div><div class="team">109 <span class="score">-</span></div>
+                        <div class="team">108 <span class="score">1</span></div><div class="team winner">109 <span class="score">6</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/11 八強賽</div>
+                    <div class="round-title">八強賽</div>
                     <div class="matchup"><div class="match-label">場次五</div>
-                        <div class="team">110 <span class="score">-</span></div><div class="team">(一)勝 <span class="score">-</span></div>
+                        <div class="team">110 <span class="score">1</span></div><div class="team winner">112 <span class="score">3</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次六</div>
-                        <div class="team">(二)勝 <span class="score">-</span></div><div class="team">111 <span class="score">-</span></div>
+                        <div class="team winner">106 <span class="score">7</span></div><div class="team">111 <span class="score">6</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次七</div>
-                        <div class="team">105 <span class="score">-</span></div><div class="team">(三)勝 <span class="score">-</span></div>
+                        <div class="team winner">105 <span class="score">7</span></div><div class="team">101 <span class="score">3</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次八</div>
-                        <div class="team">(四)勝 <span class="score">-</span></div><div class="team">102 <span class="score">-</span></div>
+                        <div class="team">109 <span class="score">2</span></div><div class="team winner">102 <span class="score">3</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/18 四強賽</div>
+                    <div class="round-title">四強賽</div>
                     <div class="matchup"><div class="match-label">場次九</div>
-                        <div class="team">(五)勝 <span class="score">-</span></div><div class="team">(六)勝 <span class="score">-</span></div>
+                        <div class="team">112 <span class="score">4</span></div><div class="team winner">106 <span class="score">10</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次十</div>
-                        <div class="team">(七)勝 <span class="score">-</span></div><div class="team">(八)勝 <span class="score">-</span></div>
+                        <div class="team">105 <span class="score">0</span></div><div class="team winner">102 <span class="score">3</span></div>
                     </div>
                 </div>
                 <div class="round finals">
-                    <div class="round-title">3/18 決賽</div>
+                    <div class="round-title">決賽</div>
                     <div class="matchup"><div class="match-label">🏆 冠軍賽 (場次十二)</div>
-                        <div class="team">(九)勝 <span class="score">-</span></div><div class="team">(十)勝 <span class="score">-</span></div>
+                        <div class="team">106 <span class="score">4</span></div><div class="team winner">102 <span class="score">6</span></div>
                     </div>
                     <div class="matchup" style="border: 2px solid #e67e22;"><div class="match-label" style="background: #fdf2e9;">🥉 季軍賽 (場次十一)</div>
-                        <div class="team">(九)敗 <span class="score">-</span></div><div class="team">(十)敗 <span class="score">-</span></div>
+                        <div class="team">112 <span class="score">0</span></div><div class="team winner">105 <span class="score">9</span></div>
                     </div>
                 </div>
             </div>
@@ -261,54 +275,55 @@
     </div>
 
     <div id="girl2" class="tab-content">
+        <div class="ranking-banner">🏆 第一名: 208 │ 🥈 第二名: 212 │ 🥉 第三名: 201 │ 🏅 第四名: 207</div>
         <div class="bracket-wrapper">
             <div class="bracket">
                 <div class="round">
-                    <div class="round-title">3/11 預賽 (一)</div>
+                    <div class="round-title">預賽 (一)</div>
                     <div class="matchup"><div class="match-label">場次一</div>
-                        <div class="team">211 <span class="score">-</span></div><div class="team">208 <span class="score">-</span></div>
+                        <div class="team">211 <span class="score">0</span></div><div class="team winner">208 <span class="score">10</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次二</div>
-                        <div class="team">205 <span class="score">-</span></div><div class="team">204 <span class="score">-</span></div>
+                        <div class="team">205 <span class="score">0</span></div><div class="team winner">204 <span class="score">2</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次三</div>
-                        <div class="team">210 <span class="score">-</span></div><div class="team">206 <span class="score">-</span></div>
+                        <div class="team winner">210 <span class="score">2</span></div><div class="team">206 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次四</div>
-                        <div class="team">203 <span class="score">-</span></div><div class="team">202 <span class="score">-</span></div>
+                        <div class="team">203 <span class="score">0</span></div><div class="team winner">202 <span class="score">8</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/11 八強賽</div>
+                    <div class="round-title">八強賽</div>
                     <div class="matchup"><div class="match-label">場次五</div>
-                        <div class="team">209 <span class="score">-</span></div><div class="team">(一)勝 <span class="score">-</span></div>
+                        <div class="team">209 <span class="score">4</span></div><div class="team winner">208 <span class="score">5</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次六</div>
-                        <div class="team">(二)勝 <span class="score">-</span></div><div class="team">207 <span class="score">-</span></div>
+                        <div class="team">204 <span class="score">0</span></div><div class="team winner">207 <span class="score">8</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次七</div>
-                        <div class="team">201 <span class="score">-</span></div><div class="team">(三)勝 <span class="score">-</span></div>
+                        <div class="team winner">201 <span class="score">4</span></div><div class="team">210 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次八</div>
-                        <div class="team">(四)勝 <span class="score">-</span></div><div class="team">212 <span class="score">-</span></div>
+                        <div class="team">202 <span class="score">0</span></div><div class="team winner">212 <span class="score">2</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/18 四強賽</div>
+                    <div class="round-title">四強賽</div>
                     <div class="matchup"><div class="match-label">場次九</div>
-                        <div class="team">(五)勝 <span class="score">-</span></div><div class="team">(六)勝 <span class="score">-</span></div>
+                        <div class="team winner">208 <span class="score">8</span></div><div class="team">207 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次十</div>
-                        <div class="team">(七)勝 <span class="score">-</span></div><div class="team">(八)勝 <span class="score">-</span></div>
+                        <div class="team">201 <span class="score">0</span></div><div class="team winner">212 <span class="score">2</span></div>
                     </div>
                 </div>
                 <div class="round finals">
-                    <div class="round-title">3/18 決賽</div>
+                    <div class="round-title">決賽</div>
                     <div class="matchup"><div class="match-label">🏆 冠軍賽 (場次十二)</div>
-                        <div class="team">(九)勝 <span class="score">-</span></div><div class="team">(十)勝 <span class="score">-</span></div>
+                        <div class="team winner">208 <span class="score">6</span></div><div class="team">212 <span class="score">2</span></div>
                     </div>
                     <div class="matchup" style="border: 2px solid #e67e22;"><div class="match-label" style="background: #fdf2e9;">🥉 季軍賽 (場次十一)</div>
-                        <div class="team">(九)敗 <span class="score">-</span></div><div class="team">(十)敗 <span class="score">-</span></div>
+                        <div class="team">207 <span class="score">0</span></div><div class="team winner">201 <span class="score">2</span></div>
                     </div>
                 </div>
             </div>
@@ -316,54 +331,55 @@
     </div>
 
     <div id="girl1" class="tab-content">
+        <div class="ranking-banner">🏆 第一名: 102 │ 🥈 第二名: 106 │ 🥉 第三名: 109 │ 🏅 第四名: 108</div>
         <div class="bracket-wrapper">
             <div class="bracket">
                 <div class="round">
-                    <div class="round-title">3/11 預賽 (一)</div>
+                    <div class="round-title">預賽 (一)</div>
                     <div class="matchup"><div class="match-label">場次一</div>
-                        <div class="team">105 <span class="score">-</span></div><div class="team">104 <span class="score">-</span></div>
+                        <div class="team winner">105 <span class="score">2</span></div><div class="team">104 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次二</div>
-                        <div class="team">109 <span class="score">-</span></div><div class="team">110 <span class="score">-</span></div>
+                        <div class="team winner">109 <span class="score">6</span></div><div class="team">110 <span class="score">2</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次三</div>
-                        <div class="team">101 <span class="score">-</span></div><div class="team">103 <span class="score">-</span></div>
+                        <div class="team">101 <span class="score">4</span></div><div class="team winner">103 <span class="score">5</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次四</div>
-                        <div class="team">112 <span class="score">-</span></div><div class="team">102 <span class="score">-</span></div>
+                        <div class="team">112 <span class="score">0</span></div><div class="team winner">102 <span class="score">6</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/11 八強賽</div>
+                    <div class="round-title">八強賽</div>
                     <div class="matchup"><div class="match-label">場次五</div>
-                        <div class="team">106 <span class="score">-</span></div><div class="team">(一)勝 <span class="score">-</span></div>
+                        <div class="team winner">106 <span class="score">8</span></div><div class="team">105 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次六</div>
-                        <div class="team">(二)勝 <span class="score">-</span></div><div class="team">111 <span class="score">-</span></div>
+                        <div class="team winner">109 <span class="score">8</span></div><div class="team">111 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次七</div>
-                        <div class="team">108 <span class="score">-</span></div><div class="team">(三)勝 <span class="score">-</span></div>
+                        <div class="team winner">108 <span class="score">6</span></div><div class="team">103 <span class="score">2</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次八</div>
-                        <div class="team">(四)勝 <span class="score">-</span></div><div class="team">107 <span class="score">-</span></div>
+                        <div class="team winner">102 <span class="score">6</span></div><div class="team">107 <span class="score">2</span></div>
                     </div>
                 </div>
                 <div class="round">
-                    <div class="round-title">3/18 四強賽</div>
+                    <div class="round-title">四強賽</div>
                     <div class="matchup"><div class="match-label">場次九</div>
-                        <div class="team">(五)勝 <span class="score">-</span></div><div class="team">(六)勝 <span class="score">-</span></div>
+                        <div class="team winner">106 <span class="score">1</span></div><div class="team">109 <span class="score">0</span></div>
                     </div>
                     <div class="matchup"><div class="match-label">場次十</div>
-                        <div class="team">(七)勝 <span class="score">-</span></div><div class="team">(八)勝 <span class="score">-</span></div>
+                        <div class="team">108 <span class="score">0</span></div><div class="team winner">102 <span class="score">4</span></div>
                     </div>
                 </div>
                 <div class="round finals">
-                    <div class="round-title">3/18 決賽</div>
+                    <div class="round-title">決賽</div>
                     <div class="matchup"><div class="match-label">🏆 冠軍賽 (場次十二)</div>
-                        <div class="team">(九)勝 <span class="score">-</span></div><div class="team">(十)勝 <span class="score">-</span></div>
+                        <div class="team">106 <span class="score">0</span></div><div class="team winner">102 <span class="score">4</span></div>
                     </div>
                     <div class="matchup" style="border: 2px solid #e67e22;"><div class="match-label" style="background: #fdf2e9;">🥉 季軍賽 (場次十一)</div>
-                        <div class="team">(九)敗 <span class="score">-</span></div><div class="team">(十)敗 <span class="score">-</span></div>
+                        <div class="team winner">109 <span class="score">12</span></div><div class="team">108 <span class="score">2</span></div>
                     </div>
                 </div>
             </div>
@@ -372,20 +388,13 @@
 
     <script>
         function openTab(evt, tabId) {
-            // 隱藏所有內容
             document.querySelectorAll('.tab-content').forEach(tab => {
                 tab.classList.remove('active');
             });
-            
-            // 移除所有按鈕的 active 狀態
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-
-            // 顯示被點擊的內容
             document.getElementById(tabId).classList.add('active');
-            
-            // 讓點擊的按鈕亮起
             evt.currentTarget.classList.add('active');
         }
     </script>
